@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: #bfd68a;
+    cursor: url(images/cursor.png), default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-screen {
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    width: 1600px;
+    height: 690px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.hole {
+    background-color: black;
+    border-radius: 50%;
+    overflow: visible;
+    width: 167px;
+    height: 167px;
+}
+
+.hole-container {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mole {
+    position: relative;
+    width: 230px;
+    right: 30px;
+    user-select: none;
+}
+
+.worm,  
+.worm-box {
+    width: 1500px;
+}
+
+.worm-container {
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+}
+
+.hungry {
+    cursor: url(images/cursor-worm.png), default;
+}
+
+.gone,
+.hide {
+    display: none;
+}
+
+
+.win {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+}
+  
+
+@media only screen and (max-width: 768px) {
+    .main-screen {
+        width: 90%; 
+        height: 590px;
+    }
+
+    .worm {
+        max-width: 90vw;
+    }
+
+    .worm-box {
+        max-width: 90vw;
+    }
+
+    .hole-container {
+        width: 40%;
+    }
+
+    .hole {
+        width: 117px;
+        height: 97px;
+    }
+
+    .mole {
+        width: 100%;
+        position: unset;
+    }
+
+}
+
+@media only screen  and (min-width: 769px){
+    .main-screen {
+        width: 100%; 
+        height: auto;
+        min-height: 690px;
+    }
+
+    .worm {
+        max-width: 90vw;
+    }
+
+    .worm-box {
+        max-width: 90vw;
+    }
+
+    .hole {
+        width: 160px;
+        height: 140px;
+    }
+
+    .mole {
+        width: 100%;
+        position: unset;
+    }
+
+}
+
